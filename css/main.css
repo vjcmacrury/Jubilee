@@ -1,8 +1,9 @@
 /***** BASE STYLES *****/
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #2b2b2b;
+    font-family: 'Fanwood Text', serif;
+    font-weight: normal;
+    color: #332973;
     width: 100%;
 }
 
@@ -17,18 +18,19 @@ li {
 #about,
 #work,
 #contact {
-    height: 600px;
+    height: 800px;
 }
 
 /***** GRID *****/
 
 .full-width {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .half-width {
     float: left;
+    margin: auto;
     width: 600px;
 }
 
@@ -41,20 +43,24 @@ li {
 
 header {
     height: 800px;
-    background-image: url("../img/background-clipping-mask.png");
+    background-image: url("../img/ocean.jpg");
     background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.05%;
 }
 
 header h1 {
-    color: #bfc38c;
-    font-family: 'Lora', serif;
-    font-size: 30px;
-    padding: 65px 0 65px 25px;
+    color: 	#241C3A;
+    font-family: 'Great Vibes', serif;
+    font-size: 80px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 nav {
-    float: right;
-    padding: 75px 25px;
+    text-align: center;
 }
 
 nav ul li{
@@ -62,25 +68,28 @@ nav ul li{
 }
 
 nav ul li a {
+    color: #332973;
+    line-height: 1.5;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
-    color: #a6a6a6;
-    padding-left: 80px;
+    font-family: 'Cormorant SC', serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 41px;
+    padding-right: 80px;
 }
 
-header h2 {
-    width: 960px;
-    clear: left;
-    font-family: 'Lora', serif;
-    font-size: 70px;
-    line-height: 1.5;
-    color: #9b9b9b;
-    padding: 20px 0 20px 25px;
+#sig span {
+  color: #241C3A;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  text-decoration: overline;
 }
 
-header h2 span {
-    color: #2b2b2b;
+header {
+
 }
 
 /***** ABOUT *****/
@@ -90,14 +99,14 @@ header h2 span {
 }
 
 #about h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 36px;
     padding-left: 48px;
 }
 
 #about p {
     font-size: 21px;
-    color: #a1a1a1;
+    color: #CE99CD;
     line-height: 2;
     padding-left: 48px;
     padding-right: 25px;
@@ -106,7 +115,7 @@ header h2 span {
 /***** WORK *****/
 
 #work {
-  background-color: #f9ceb7;
+  background-color: #FFDAB9;
   text-align: center;
 }
 
@@ -126,7 +135,7 @@ header h2 span {
 }
 
 #work p {
-    font-family: 'Lora', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     line-height: 1.5;
     padding: 0 50px;
@@ -135,7 +144,7 @@ header h2 span {
 /***** CONTACT *****/
 
 #contact {
-  background-color: #ebebeb;
+  background-color: #FAE2F5;
 }
 
 #contact .full-width {
@@ -158,7 +167,7 @@ header h2 span {
 }
 
 #contact h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 32px;
     line-height: 1;
 }
