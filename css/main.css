@@ -18,7 +18,7 @@ li {
 #about,
 #work,
 #contact {
-    height: 700px;
+    height: 490px;
 }
 
 /***** GRID *****/
@@ -30,7 +30,6 @@ li {
 
 .half-width {
     float: left;
-    text-align: center;
     padding-left: 5%;
     width: 600px;
 }
@@ -43,7 +42,7 @@ li {
 
 /***** HEADER *****/
 
-header {
+#landing {
     height: 700px;
     background-image: url("../img/ocean.jpg");
     background-size: cover;
@@ -53,19 +52,24 @@ header {
     padding-top: 0.05%;
 }
 
-header h1 {
+#landing h1,
+#sub h1 {
     color: 	#241C3A;
     font-family: 'Great Vibes', serif;
+}
+
+#landing h1 {
     font-size: 80px;
     margin-bottom: 0;
     padding: 0;
 }
 
-nav {
+#landing nav {
+    font-size: 30px;
     text-align: center;
 }
 
-nav ul li{
+#landing nav ul li{
     display: inline-block;
 }
 
@@ -75,29 +79,68 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Cormorant SC', serif;
-    font-size: 30px;
     font-weight: bold;
-    padding-left: 41px;
-    padding-right: 80px;
+    padding-left: 31px;
+    padding-right: 20px;
 }
 
-#sig span {
+#sig span,
+#sub span {
   color: #241C3A;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 25px;
-  font-weight: 400;
-  margin: 0;
   text-decoration: overline;
 }
 
-header {
+#sig span {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+}
 
+#sub {
+    background-color: #323040;
+    border-bottom: 2px solid #323040;
+    height: 100px;
+  }
+
+#sub a {
+    text-decoration: none;
+}
+
+#sub h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    margin: 10px 0 0 10px;
+}
+
+#sub sig {
+    float: left;
+}
+
+#sub span {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-left: 9%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#sub li {
+    color: #FFFFFF;
+    float: right;
+    padding: 20px 10px;
+}
+
+#sub nav,
+#sub nav a:hover,
+#sub nav a:visited {
+    color: #FFFFFF;
 }
 
 /***** ABOUT *****/
 
 #about .full-width {
-    padding: 2% 0;
+    padding: 1% 0;
 }
 
 #about h2 {
@@ -108,28 +151,28 @@ header {
 }
 
 #about img#contact-img {
-    border: 12px solid #241C3A;
-    margin-top: 1%;
-    width: 60%;
+    border: 2px solid #241C3A;
+    margin: auto;
+    margin-left: 17%;
+    width: 65%;
 }
 
 #about p {
-    font-size: 19px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.4;
     margin-top: 0;
-    padding: 0 25px 0 48px;
+    padding: 0 25px 0 25px;
     text-align: justify;
 }
 
 /***** WORK *****/
 
 #work {
-  background-color: #ffc4ca;
-  text-align: center;
+    text-align: center;
 }
 
 #work .full-width {
-    padding: 115px 0;
+    padding: 55px 0;
 }
 
 #work img {
@@ -156,7 +199,6 @@ header {
 #contact {
   background-color: #f9f9fa;
 }
-
 
 #contact h2,
 #contact #email-header,
@@ -207,10 +249,26 @@ header {
 }
 
 form {
-  clear: both;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  height: 70%;
+    height: 70%;
+}
+
+/**** FOOTER ****/
+
+#other {
+    background-color: #FFFFFF;
+    border-top: 1px dotted #323040;
+    font-size: 15px;
+    margin: auto;
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: center;
+    width: 50%;
+}
+
+#other span {
+    color: 	#ffc4ca;
+    font-family: 'Great Vibes', serif;
+    font-size: 30px;
+    padding-bottom: 0;
+    text-decoration: overline underline;
 }
