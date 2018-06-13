@@ -134,6 +134,7 @@ nav ul li a {
 
 #sub nav,
 #sub nav a:hover,
+#sub nav a:link,
 #sub nav a:visited {
     color: #FFFFFF;
 }
