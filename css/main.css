@@ -18,6 +18,7 @@ li {
 #about,
 #work,
 #contact {
+    background-color: #f9f9fa;
     height: 490px;
 }
 
@@ -145,7 +146,6 @@ nav ul li a {
 
 #about h2 {
     color: #241C3A;
-    font-family: 'Raleway', sans-serif;
     font-size: 36px;
     text-align: center;
 }
@@ -197,15 +197,17 @@ nav ul li a {
 /***** CONTACT *****/
 
 #contact {
-  background-color: #f9f9fa;
+  padding-top: 1.5%;
 }
 
 #contact h2,
 #contact #email-header,
 #contact #socialmedia-header,
 #contact ul,
-#contact a {
-    padding-left: 40%;
+#contact a,
+#contact p {
+    padding-left: 30%;
+    padding-top: 4%;
 }
 
 #contact #envelope {
@@ -213,28 +215,20 @@ nav ul li a {
 }
 
 #contact h2 {
-    font-family: 'Raleway', sans-serif;
     font-size: 32px;
     line-height: 1;
 }
-#contact #email-header{
-    font-size: 28px;
+#contact #email-header,
+#contact p {
+    font-size: 24px;
     font-weight: normal;
     line-height: 2;
     margin: -30px 0 5px 0;
 }
 #contact #socialmedia-header {
-    color: #332973;
     font-weight: bold;
     font-size: 24px;
     line-height: 2;
-}
-
-#contact a {
-    text-decoration: none;
-    color: #cda590;
-    font-weight: bold;
-    font-size: 24px;
 }
 
 #contact ul {
@@ -245,17 +239,18 @@ nav ul li a {
 }
 #contact ul img {
     font-size: 32px;
-    padding-right: 48px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-form {
-    height: 70%;
+iframe {
+  margin: 0;
+  padding-top: 8%;
 }
 
 /**** FOOTER ****/
 
 #other {
-    background-color: #FFFFFF;
     border-top: 1px dotted #323040;
     font-size: 15px;
     margin: auto;
@@ -266,7 +261,7 @@ form {
 }
 
 #other span {
-    color: 	#ffc4ca;
+    color: 	#6856B2;
     font-family: 'Great Vibes', serif;
     font-size: 30px;
     padding-bottom: 0;
