@@ -1,9 +1,9 @@
 /***** BASE STYLES *****/
 
 body {
-    font-family: 'Fanwood Text', serif;
+    color: #323040;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: normal;
-    color: #332973;
     width: 100%;
 }
 
@@ -18,7 +18,7 @@ li {
 #about,
 #work,
 #contact {
-    height: 600px;
+    height: 700px;
 }
 
 /***** GRID *****/
@@ -30,19 +30,21 @@ li {
 
 .half-width {
     float: left;
-    margin: auto;
+    text-align: center;
+    padding-left: 5%;
     width: 600px;
 }
 
 .third-width {
     float: left;
+    padding-left: 4%;
     width: 400px;
 }
 
 /***** HEADER *****/
 
 header {
-    height: 800px;
+    height: 700px;
     background-image: url("../img/ocean.jpg");
     background-size: cover;
     background-position: center;
@@ -95,27 +97,34 @@ header {
 /***** ABOUT *****/
 
 #about .full-width {
-    padding: 80px 0;
+    padding: 2% 0;
 }
 
 #about h2 {
+    color: #241C3A;
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
-    padding-left: 48px;
+    text-align: center;
+}
+
+#about img#contact-img {
+    border: 12px solid #241C3A;
+    margin-top: 1%;
+    width: 60%;
 }
 
 #about p {
-    font-size: 21px;
-    color: #CE99CD;
-    line-height: 2;
-    padding-left: 48px;
-    padding-right: 25px;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 0;
+    padding: 0 25px 0 48px;
+    text-align: justify;
 }
 
 /***** WORK *****/
 
 #work {
-  background-color: #FFDAB9;
+  background-color: #ffc4ca;
   text-align: center;
 }
 
@@ -135,6 +144,7 @@ header {
 }
 
 #work p {
+    color: #332973;
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     line-height: 1.5;
@@ -144,26 +154,20 @@ header {
 /***** CONTACT *****/
 
 #contact {
-  background-color: #FAE2F5;
+  background-color: #f9f9fa;
 }
 
-#contact .full-width {
-    padding: 110px 0;
-}
-
-#contact img#contact-img {
-    margin-left: 25px;
-    border: 12px solid #ffffff;
-}
 
 #contact h2,
 #contact #email-header,
 #contact #socialmedia-header,
-#contact ul {
-    padding-left: 115px;
+#contact ul,
+#contact a {
+    padding-left: 40%;
 }
+
 #contact #envelope {
-    padding: 0 10px 0 115px;
+    padding-right: 10px;
 }
 
 #contact h2 {
@@ -178,11 +182,12 @@ header {
     margin: -30px 0 5px 0;
 }
 #contact #socialmedia-header {
+    color: #332973;
     font-weight: bold;
     font-size: 24px;
     line-height: 2;
-    margin: 40px 0 0 0;
 }
+
 #contact a {
     text-decoration: none;
     color: #cda590;
@@ -199,4 +204,13 @@ header {
 #contact ul img {
     font-size: 32px;
     padding-right: 48px;
+}
+
+form {
+  clear: both;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 70%;
 }
