@@ -2,7 +2,7 @@
 
 html {
     height: 100%;
-    width: 100%;  
+    width: 100%;
 }
 
 body {
@@ -22,10 +22,9 @@ li {
 }
 
 #about,
-#work,
-#contact {
+#work {
     background-color: #f9f9fa;
-    height: 490px;
+    height: 550px;
 }
 
 /***** GRID *****/
@@ -50,7 +49,7 @@ li {
 /***** HEADER *****/
 
 #landing {
-    height: 700px;
+    height: 100%;
     background-image: url("../img/ocean.jpg");
     background-size: cover;
     background-position: center;
@@ -204,7 +203,11 @@ nav ul li a {
 /***** CONTACT *****/
 
 #contact {
-  padding-top: 1.5%;
+  padding-top: 6%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-color: #f9f9fa;
+  height: 470px;
 }
 
 #contact h2,
@@ -214,7 +217,6 @@ nav ul li a {
 #contact a,
 #contact p {
     padding-left: 30%;
-    padding-top: 4%;
 }
 
 #contact h2 {
@@ -250,7 +252,7 @@ nav ul li a {
 
 iframe {
   margin: 0;
-  padding-top: 8%;
+  padding: 0;
 }
 
 /**** FOOTER ****/
@@ -276,6 +278,13 @@ iframe {
 /**** Media Queries ****/
 
 @media only screen and (max-width: 480px) {
+
+  .third-width {
+      float: left;
+      padding-left: 0.5%;
+      padding-right: 0.7%;
+      width: 400px;
+  }
 
   body {
     overflow-x: hidden;
@@ -334,9 +343,16 @@ iframe {
     width: 60%;
   }
 
-  #contact,
   #about {
-    height: 720px;
+    height: 1100px;
+  }
+
+  #about img#contact-img {
+    margin-bottom: 7%;
+  }
+
+  #contact {
+    height: 600px;
   }
 
   #contact h2,
@@ -351,7 +367,7 @@ iframe {
 
   #contact h2 {
       font-size: 25px;
-      line-height: 1;
+      line-height: 2;
   }
 
   #contact #email-header,
@@ -359,7 +375,7 @@ iframe {
       font-size: 15px;
       font-weight: normal;
       line-height: 2;
-      margin: -30px 0 5px 0;
+      margin: -30px 0 10px 0;
   }
 
   #contact #socialmedia-header {
@@ -376,6 +392,7 @@ iframe {
 
   #other {
     font-size: 15px;
+    padding-bottom: 1%;
   }
 
   #other span {
@@ -388,7 +405,12 @@ iframe {
 
   #work .third-width {
     margin-bottom: 50px;
-
   }
 
+}
+
+@media only screen and (min-width: 481px){
+  .mobile {
+    display: none;
+  }
 }
