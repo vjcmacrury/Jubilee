@@ -156,7 +156,8 @@ nav ul li a {
     text-align: center;
 }
 
-#about img#contact-img {
+#about img#contact-img,
+#about-tablet img#contact-img {
     border: 2px solid #241C3A;
     margin: auto;
     margin-left: 17%;
@@ -322,7 +323,10 @@ iframe {
     font-size: 12px;
   }
 
-  .desktop {
+  .desktop,
+  .tablet,
+  #work-tablet,
+  #contact-tablet {
     display: none;
   }
 
@@ -407,10 +411,165 @@ iframe {
     margin-bottom: 50px;
   }
 
-}
-
-@media only screen and (min-width: 481px){
-  .mobile {
+  #about-tablet {
     display: none;
   }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1323px) {
+
+  #about,
+  .mobile,
+  .desktop,
+  #work,
+  #contact {
+    display: none;
+  }
+
+  #about-tablet h2 {
+    text-align: center;
+    padding-top: 4%;
+  }
+
+  #about-tablet p {
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+  }
+
+  #about-tablet img#contact-img {
+    width: 40%;
+    margin: 2% 0 3% 30%;
+  }
+
+  #about-tablet {
+    height: 960px;
+  }
+
+  #landing h1 {
+    font-size: 50px;
+  }
+
+  #sig span {
+    font-size: 15px;
+  }
+
+  #landing li {
+    font-size: 24px;
+  }
+
+  #landing ul {
+    font-weight: bold;
+    text-align: center;
+    border: 1px dotted #323040;
+    padding: 0 0 10px 0;
+  }
+
+  #sub h1 {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+  .tablet li {
+    padding-bottom: 10%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .tablet .full-width {
+    text-align: center;
+  }
+
+  .tablet h1 {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  #other {
+    font-size: 15px;
+    padding-bottom: 1.5%;
+  }
+
+  #work-tablet {
+    font-size: 18px;
+    height: 820px;
+  }
+
+  #work-tablet .third-width {
+    margin: 10% 2.5% 10% 2%;
+    text-align: center;
+    width: 350px;
+  }
+
+  #work-tablet .half-width {
+    padding-left: 25%;
+    text-align: center;
+    width: 50%;
+  }
+
+  #contact-tablet iframe {
+    padding-bottom: 3 %;
+    padding-top: 5%;
+  }
+
+  #contact-tablet {
+    height: 800px;
+    text-align: center;
+  }
+
+  #contact-tablet h2,
+  #contact-tablet #email-header,
+  #contact-tablet #socialmedia-header,
+  #contact-tablet ul,
+  #contact-tablet a,
+  #contact-tablet p {
+      line-height: 2;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  #contact-tablet h2 {
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  #contact-tablet #email-header,
+  #contact-tablet p {
+      font-size: 19px;
+      font-weight: normal;
+      line-height: 3;
+      margin: -30px 0 10px 0;
+  }
+
+  #contact-tablet #socialmedia-header {
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 3;
+  }
+
+  #contact-tablet ul img {
+      font-size: 25px;
+      margin-left: 5%;
+      padding-right: 5%;
+  }
+
+}
+
+@media only screen and (min-width: 1324px) {
+
+  .mobile,
+  .tablet {
+    display: none;
+  }
+
+  #about-tablet,
+  #work-tablet,
+  #contact-tablet {
+    display: none;
+  }
+
 }
