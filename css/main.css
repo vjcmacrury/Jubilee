@@ -22,9 +22,27 @@ li {
 }
 
 #about,
-#work {
+#work,
+#contact {
     background-color: #f9f9fa;
-    height: 550px;
+    overflow: auto;
+}
+
+main {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+.push {
+  background-color: #f9f9fa;
 }
 
 /***** GRID *****/
@@ -59,7 +77,7 @@ li {
 }
 
 #landing h1,
-#sub h1 {
+.sub h1 {
     color: 	#241C3A;
     font-family: 'Great Vibes', serif;
 }
@@ -91,7 +109,7 @@ nav ul li a {
 }
 
 #sig span,
-#sub span {
+.sub span {
   color: #241C3A;
   font-family: 'Cormorant Garamond', serif;
   text-decoration: overline;
@@ -103,27 +121,27 @@ nav ul li a {
     margin: 0;
 }
 
-#sub {
+.sub {
     background-color: #323040;
     border-bottom: 2px solid #323040;
     height: 100px;
   }
 
-#sub a {
+.sub a {
     text-decoration: none;
 }
 
-#sub h1 {
+.sub h1 {
     color: #FFFFFF;
     font-size: 50px;
     margin: 10px 0 0 10px;
 }
 
-#sub sig {
+.sub sig {
     float: left;
 }
 
-#sub span {
+.sub span {
     color: #FFFFFF;
     font-size: 15px;
     margin-left: 9%;
@@ -131,16 +149,16 @@ nav ul li a {
     padding-top: 0;
 }
 
-.desktop li {
+#desktop li {
     color: #FFFFFF;
     float: right;
     padding: 20px 10px;
 }
 
-#sub nav,
-#sub nav a:hover,
-#sub nav a:link,
-#sub nav a:visited {
+.sub nav,
+.sub nav a:hover,
+.sub nav a:link,
+.sub nav a:visited {
     color: #FFFFFF;
 }
 
@@ -167,8 +185,6 @@ nav ul li a {
 #about p {
     font-size: 18px;
     line-height: 1.4;
-    margin-top: 0;
-    padding: 0 25px 0 25px;
     text-align: justify;
 }
 
@@ -206,9 +222,7 @@ nav ul li a {
 #contact {
   padding-top: 6%;
   padding-bottom: 0;
-  margin-bottom: 0;
   background-color: #f9f9fa;
-  height: 470px;
 }
 
 #contact h2,
@@ -282,14 +296,9 @@ iframe {
 
   .third-width {
       float: left;
+      margin-bottom: 50px;
       padding-left: 0.5%;
       padding-right: 0.7%;
-      width: 400px;
-  }
-
-  body {
-    overflow-x: hidden;
-    width: 100%;
   }
 
   #landing h1 {
@@ -311,52 +320,51 @@ iframe {
     padding: 0 0 10px 0;
   }
 
-  #sub h1 {
+  .sub h1 {
     font-size: 30px;
     margin: 0 auto;
   }
 
-  .mobile li {
+  #mobile li {
     padding-left: 0;
     margin-left: 0;
     margin-right: 10px;
     font-size: 12px;
   }
 
-  .desktop,
-  .tablet,
+  #desktop,
+  #tablet,
   #work-tablet,
   #contact-tablet {
     display: none;
   }
 
-  .mobile {
+  #mobile {
     display: block;
   }
 
-  .mobile .full-width {
+  #mobile .full-width {
     text-align: center;
   }
 
-  .mobile h1 {
+  #mobile h1 {
       padding-bottom: 0;
       padding-top: 20px;
   }
 
   iframe {
-    width: 60%;
-  }
-
-  #about {
-    height: 1100px;
+    margin: auto;
+    padding: 5%;
+    width: 80%;
   }
 
   #about img#contact-img {
-    margin-bottom: 7%;
+    margin-bottom: 8%;
   }
 
-  #contact {
-    height: 600px;
+
+  #contact #socialmedia-header {
+    padding-bottom: 10%;
   }
 
   #contact h2,
@@ -403,10 +411,6 @@ iframe {
     font-size: 19px;
   }
 
-  #work {
-    height: 1310px;
-  }
-
   #work .third-width {
     margin-bottom: 50px;
   }
@@ -417,11 +421,11 @@ iframe {
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1323px) {
+@media only screen and (min-width: 481px) and (max-width: 1324px) {
 
   #about,
-  .mobile,
-  .desktop,
+  #mobile,
+  #desktop,
   #work,
   #contact {
     display: none;
@@ -444,10 +448,6 @@ iframe {
     margin: 2% 0 3% 30%;
   }
 
-  #about-tablet {
-    height: 960px;
-  }
-
   #landing h1 {
     font-size: 50px;
   }
@@ -467,12 +467,12 @@ iframe {
     padding: 0 0 10px 0;
   }
 
-  #sub h1 {
+  .sub h1 {
     font-size: 30px;
     margin: 0 auto;
   }
 
-  .tablet li {
+  #tablet li {
     padding-bottom: 10%;
     padding-left: 0;
     margin-left: 0;
@@ -480,11 +480,11 @@ iframe {
     font-size: 20px;
   }
 
-  .tablet .full-width {
+  #tablet .full-width {
     text-align: center;
   }
 
-  .tablet h1 {
+  #tablet h1 {
     padding-bottom: 0;
     padding-top: 20px;
   }
@@ -496,7 +496,6 @@ iframe {
 
   #work-tablet {
     font-size: 18px;
-    height: 820px;
   }
 
   #work-tablet .third-width {
@@ -512,12 +511,12 @@ iframe {
   }
 
   #contact-tablet iframe {
-    padding-bottom: 3 %;
+    padding-bottom: 3%;
     padding-top: 5%;
+    width: auto;
   }
 
   #contact-tablet {
-    height: 800px;
     text-align: center;
   }
 
@@ -561,8 +560,8 @@ iframe {
 
 @media only screen and (min-width: 1324px) {
 
-  .mobile,
-  .tablet {
+  #mobile,
+  #tablet {
     display: none;
   }
 
