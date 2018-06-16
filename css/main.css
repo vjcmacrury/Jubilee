@@ -23,9 +23,9 @@ li {
 
 #about,
 #work,
-#contact {
+#contact,
+main {
     background-color: #f9f9fa;
-    overflow: auto;
 }
 
 main {
@@ -131,13 +131,14 @@ nav ul li a {
     text-decoration: none;
 }
 
-.sub h1 {
+.sub h1,
+.sub #sig {
     color: #FFFFFF;
     font-size: 50px;
     margin: 10px 0 0 10px;
 }
 
-.sub sig {
+.sub #sig {
     float: left;
 }
 
@@ -561,13 +562,11 @@ iframe {
 @media only screen and (min-width: 1324px) {
 
   #mobile,
-  #tablet {
-    display: none;
-  }
-
+  #tablet,
   #about-tablet,
   #work-tablet,
-  #contact-tablet {
+  #contact-tablet,
+  #sig span {
     display: none;
   }
 
